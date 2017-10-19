@@ -1,0 +1,4949 @@
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, 
+abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small,strong, sub, sup, var,b, u, i, dl, dt, dd, ol, ul, li,fieldset, form, label, 
+legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, menu, nav, output, ruby, section, 
+summary,time, mark, audio, video { margin: 0; padding: 0; }
+ol, ul ,li{list-style: none;} 
+body { line-height: 0; font-family: "微软雅黑"; margin:0 auto;}
+html{width: 100%;}
+ul li, ol li { list-style: none; }
+table{border-collapse:collapse;border-spacing: 0;}
+dl,dt,dd,span{margin:0;padding:0;display:block;}
+table { border-collapse: collapse; border-spacing: 0;}
+a { text-decoration: none; color: inherit; display:block;}
+div img { display: block; }
+input{
+    outline:none;
+}
+    ::-webkit-scrollbar{width:10px;}
+    ::-webkit-scrollbar-track {
+          /*background-color: #323232;*/
+    } /* 滚动条的滑轨背景颜色 */
+    ::-webkit-scrollbar-thumb {
+          height:20px;
+          background-color: #f5f8fa; 
+    } /* 滑块颜色 */
+    ::-webkit-scrollbar-button {
+          /*background-color: #323232;*/
+    } /* 滑轨两头的监听按钮颜色 */
+    ::-webkit-scrollbar-corner {
+          /*background-color: #323232;*/
+    } /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+
+/*menutop*/
+a:hover {
+    color: #fff;
+}
+body{
+    width:100%;
+    height:100%;    
+    background:#eee;
+    /*overflow:hidden;*/
+    margin:0 auto;
+    position:relative;
+}
+.head{
+    width: 1920px;
+    background:#fff;
+    overflow:hidden;
+}
+.head .lefttop{
+    display:block;
+    width: 174px;
+    height: 64px;
+    background:#323232;
+    float:left;
+}
+.head .lefttop img{
+    float: left;
+    margin:12px;
+}
+.head .lefttop span{
+    display:block;
+    color:white;
+    width: 54px;
+    height:64px;
+    font-size: 18px;
+    line-height: 64px;
+    float:left;
+}
+.righttop{
+    float:left;
+    position:relative;
+}
+.righttop a{
+    display:block;
+    height:64px;
+    line-height: 64px;
+    font-size: 14px;
+    color:#323232;
+    padding-left: 20px;
+    float:left;
+}
+.righttop form{
+    width: 660px;
+    height: 44px;
+    border:1px solid #e5e5e5;
+    border-radius: 5px;
+    position:absolute;
+    top:50%;
+    margin-left:496px;
+    margin-top: -22px;
+}
+.righttop .search .searching{
+    width: 577px;
+    height: 42px;
+    outline: none;
+    border:none;
+    padding-left: 19px;
+    padding-bottom: 1px;
+    font-size: 14px;
+    color:#999;
+    font-family: "微软雅黑";
+}
+.search .sousou{
+    width: 64px;
+    height: 44px;
+    float:right;
+    background:#eb6818;
+    position: relative;
+    cursor:pointer;
+    color:white;
+    font-size: 14px;
+    /*line-height: 14px;*/
+    text-align: center;
+}
+.sousou input{
+    width: 100%;
+    height: 44px;
+    outline: none;
+    border:none;
+    color:white;
+    font-size: 14px;
+    text-align: center;
+    background:#eb6818;
+
+
+}
+.righttop img{
+    position:absolute;
+    top:12px;
+    left:6px;
+}
+
+
+/*leftmenu*/
+.active{
+    background:#eb6818;
+}
+.activeli{
+    background:#eb6818;
+}
+.leftmenu{
+    width: 174px;
+    height: 100%;
+    /*height:1015px;*/
+    background:#323232;
+    float:left;
+    overflow:hidden;
+    position:absolute;
+}
+.leftmenu .title{
+    width: 100%;
+    height: 64px;
+    cursor: pointer;
+}
+.leftmenu .title:hover,.menuson li:hover {
+   background:#eb6818;
+}
+.leftmenu dd{
+    line-height:64px;
+    font-size:16px;
+    color:white;
+    text-align: center;
+    border-bottom: 1px solid #424242;
+    overflow:hidden;
+}
+.leftmenu dd:first-child{
+border-top: 1px solid #424242;
+}
+.leftmenu .title .pic{
+   width: 64px;
+   height: 64px;
+   float:left;
+   border-right:1px solid #424242;
+   position:relative; 
+}
+.leftmenu .title .menutext{
+    display:block;
+    width: 109px;
+    height: 64px;
+    line-height:64px;
+    float:right;
+
+}
+.leftmenu dd .menuson{
+    display:none;
+    background:rgba(235, 104, 24, 0.3);
+}
+.leftmenu dd:first-child .menuson{
+    display:block;
+}
+.menuson li:first-child{
+     border-top:1px solid #424242 ; 
+}
+.menuson li:last-child{
+    border-bottom: none;
+}
+.menuson {
+    width: 100%;
+    overflow:hidden;
+}
+.menuson li{
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom:1px solid #424242 ; 
+}
+.menuson li a{
+    width: 100%;
+    height: 100%;
+}
+.title .pic img{
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+
+/*************首页index.html*******************/
+#content {
+    background: #eee;
+    width: 1686px;
+    /*margin:0 auto;*/
+    margin-left: 204px;
+    overflow:hidden;
+}
+.mainbox{
+    width: 100%;
+    /*height: 1283px;*/
+    margin-top: 20px;
+    /*margin-bottom: 20px;*/
+    float:left;
+    overflow:hidden;
+}
+.myaccount{
+    width: 274px;
+    height: 140px;
+    float:left;
+    background:white;
+}
+.leftat{
+    width: 116px;
+    height:140px;
+    float:left;
+    overflow:hidden;
+}
+.leftat .myaccountlogo{
+    margin-top: 35px;
+    margin-left: 36px;
+    margin-bottom: 5px;
+}
+.star{
+    margin-left: 9px;
+    margin-top: 12px;
+}
+.star li{
+    display:inline-block;
+}
+.rightat{
+    width: 158px;
+    float:left;
+    overflow:hidden;
+}
+.rightat p{
+    height: 14px;
+    font-size: 14px;
+    line-height: 14px;
+    color:#323232;
+    text-align: left;
+    margin-bottom:15px;
+    margin-left:10px;
+}
+.rightat .name{
+    margin-top:35px;
+}
+
+/*中间功能*/
+.midfn{
+    width: 686px;
+    height: 140px;
+    background:white;
+    float:left;
+    margin-left: 20px;
+}
+.topcount{
+    width: 686px;
+    overflow:hidden;
+    float:left;
+}
+.topcount img{
+    float:left;
+}
+.topcount a{
+    width: 228px;
+    height: 70px;
+    float:left;
+    margin-left: 20px;
+    margin-top:10px;
+}
+.topcount a span{
+    display:block;
+    height:16px;
+    line-height: 16px;
+    font-size: 16px;
+    color:#323232;
+    float:left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.topcount a p{
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    font-size: 18px;
+    color:#f35045;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-right: 50px;
+}
+.topcount a .lastchild{
+    color:#39aee8;
+    padding-right: 70px;
+}
+
+.downcount a{
+        margin-top:0px;
+}
+.downcount a p{
+    color:#eb6818;
+}
+.downcount a .lastchild{
+    color:#006f98;
+}
+
+
+
+/*右边功能*/
+.rightfn{
+    width: 686px;
+    height: 140px;
+    background:white;
+    float:left;
+    margin-left: 20px;
+
+}
+.rightfn a{
+    width: 114px;
+    height: 100%;
+    float:left;
+}
+.rightfn a img{
+    margin-top: 32px;
+    margin-left: 32px;
+}
+.rightfn a p{
+    margin-top: 10px;
+    font-size: 16px;
+    height:16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+/*今日收租*/
+.remind{
+    width: 274px;
+    height: 776px;
+    float:left;
+    margin-top: 20px;
+    background-color: white;
+    position:relative;
+}
+.redtop p{
+    height: 16px;
+    line-height: 16px;
+    margin: 20px;
+    float:left;
+}
+.redtop a{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    color:white;
+    background:#39aee8;
+    border-radius: 50%;
+    float:right;
+    margin:20px;
+}
+.notic{
+    width: 120px;
+    height: 72px;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+
+}
+.notic img{
+    float:left;
+    margin-left:46px;
+}
+.notic p{
+    width: 100%;
+    float:left;
+    height:18px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+.finance{
+    width: 1392px;
+    height: 410px;
+    background:white;
+    float:left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.finance #main{
+    width: 890px;
+    height: 370px;
+    float:left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.total{
+    width: 470px;
+    height: 100%;
+    float:left;
+
+}
+.totalhead{
+    display:block;
+    float:left;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: normal;
+
+}
+.totalbody{
+    width: 100%;
+    height: 95px;
+    float:left;
+    margin-bottom: 20px;
+}
+.totalbody .needtake,.havetake,.stat-percent{
+    height: 20px;
+    line-height: 20px;
+    float:left;
+    display:block;
+}
+.totalbody .needtake{
+    color:#81838e;
+    margin-bottom: 10px;
+}
+.havetake{
+    color:#ed5565;
+
+}
+.stat-percent{
+    float: right;
+}
+.totalbody .progress{
+    width: 100%;
+    height: 30px;
+    background:#ed5565;
+    float:left;
+    border-radius: 3px;
+    margin-bottom: 10px;
+
+}
+.totalbody .pg3{
+    background:#cdcdcd;
+}
+.totalbody .pg2{
+    background:#eb6818;
+}
+.totalbody .ht2{
+    color:#eb6818;
+    
+}
+.totalbody .ht3{
+    color:#999;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.rented{
+    width: 450px;
+    height: 347px;
+    background:white;
+    float:left;
+    margin:20px 0px 0px 20px;
+}
+.rentPic{
+    width: 430px;
+    height: 325px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+/*footer*/
+.footer{
+    width: 1920px;
+    height:40px;
+    margin-top: 24px;
+    background:#484848;
+    float:left;
+}
+.footer p{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    color:#f5f5f5;
+    font-size: 14px;
+}
+
+/*******************房产管理mangment******************************/
+/*navhead*/
+.navhead{
+    width:1686px;
+    overflow:hidden;
+    border-bottom: 2px solid #cdcdcd;
+
+}
+.leftbtn,.rightbtn{
+    width: 40px;
+    height: 64px;
+    float:left;
+    background:url("../imgs/icon_direction-left.png")no-repeat center;
+    background-color:white;
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+}
+.rightbtn{
+    float:right;
+    background:url("../imgs/icon_right-direction.png")no-repeat center;
+    background-color:white;
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+}
+.detailArea{
+    width: 120px;
+    height: 64px;
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    line-height: 64px;
+    font-size: 14px;
+    color:#323232;
+    text-align: center;
+    float:left;
+    background:white;
+}
+.detailArea a{
+    line-height: 64px;
+    color:#f18f47;
+    float:right;
+    margin-right: 20px;
+}
+.addroom{
+    width: 200px;
+    height: 64px;
+    float:right;
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    background:white;
+    position:relative;
+}
+.addroom .addroombtn{
+    width: 120px;
+    height: 44px;
+    background:url("../imgs/addroom.png")no-repeat center;
+    position:absolute;
+    left:0;
+    right:0;
+    top: 0;
+    bottom:0;
+    margin:auto;
+     cursor: pointer;
+}
+/*rooms*/
+.rooms{
+    width: 1686px;
+    /*height:888px;*/
+    padding-bottom: 90px;
+    overflow:hidden;
+    background:white;
+}
+.roomhead{
+    width: 100%;
+    height:145px;
+    /*overflow:hidden;*/
+}
+.roomhead .roominfo{
+    height:80px;
+    width: 400px;
+    float:left;
+    margin:30px 20px;
+}
+.roomhead .roominfo img{
+    float:left;
+    
+}
+
+.roominfo h3{
+    width: 320px;
+    height: 18px;
+    font-size: 14px;
+    color:#999;
+    float:left;
+    line-height: 18px;
+}
+.roominfo h3 .houseT{
+    float:left;
+    font-weight: normal;
+    padding-left: 20px;
+}
+.roominfo h3 span{
+    display:inline;
+}
+.roominfo h3 .unuse{
+    color:#ff0000;
+}
+.roomtitle{
+    font-size: 18px;
+    color:#323232;
+}
+.roominfo .addroomNum{
+    width: 120px;
+    height: 44px;
+    float:left;
+    background:url("../imgs/addnum.png")no-repeat center;
+    margin-top: 18px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.roominfo .more{
+    width: 80px;
+    height: 44px;
+    float:left;
+    background:url("../imgs/more.png")no-repeat center;
+    margin-top: 18px;
+    margin-left: 20px;
+    cursor: pointer;
+    position:relative;
+}
+.roominfo .more .domore{
+    width: 78px;
+    height: 78px;
+    top:44px;
+    position:absolute;
+    background:white;
+    border: 1px solid #cdcdcd;
+    z-index: 1;
+    display:none;
+}
+.roominfo .more .domore a{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color:#39aee8;
+
+}
+.roomhead form{
+    width: 660px;
+    height: 44px;
+    border:1px solid #e5e5e5;
+    border-radius: 5px;
+    float:right;
+    margin-top: 22px;
+    margin-right: 40px;
+}
+.search .searching{
+    width: 574px;
+    height: 42px;
+    outline: none;
+    border:none;
+    padding-left: 19px;
+    padding-bottom: 1px;
+    font-size: 14px;
+    color:#999;
+    font-family: "微软雅黑";
+}
+.search .sousou{
+    width: 64px;
+    height: 44px;
+    float:right;
+    background:#eb6818;
+    position: relative;
+    border-radius: 15px;
+}
+.sousou .btn{
+    width: 64px;
+    height: 44px;
+    outline: none;
+    border:none;
+    color:white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background:#eb6818;
+    float:right;
+    padding-left: 30px;
+
+}
+.sousou img{
+    position:absolute;
+    top:12px;
+    left:6px;
+}
+.roomfn{
+    margin-left:30px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    background:white;
+}
+.rentedroombox{
+    width: 182px;
+    height: 182px;
+    float:left;
+    border:1px solid #e5e5e5;
+    position:relative;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+/*rentroominfo*/
+.rentedroominfo{
+    float:left;
+    width: 172px;
+    height: 172px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    border:1px solid #e5e5e5;
+    background-color:#39aee8;
+}
+.rentedroominfo .roomNum{
+    width: 152px;
+    height: 16px;
+    float:left;
+    line-height: 16px;
+    font-size: 16px;
+    color:white;
+    padding:9px;
+    position:relative;
+    background:url("../imgs/icon_xiangxia.png")no-repeat right;
+}
+.rentedroominfo .rent-name{
+    width: 100%;
+    height: 23px;
+    line-height: 23px;
+    font-size: 14px;
+    color:white;
+    float:left;
+    margin-top: 18px;
+}
+.rentedroominfo .rent-name img{
+    float:left;
+    margin:0 10px;
+}
+.rentedroominfo .housepay,.rent-tel,.rent-date{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color:white;
+    float:left;
+    margin-left: 10px;
+}
+.rentedroominfo .nameDetail{
+    height: 14px;
+    float:left;
+}
+/*.rentedroominfo p:hover{
+    background:url("../imgs/icon_xiangxia_selected.png")no-repeat right;
+}*/
+.rentedroominfo .state{
+    color:#999;
+    text-align: center;
+    margin-top: 130px;
+}
+.rentedroominfo .domore2{
+    width: 78px;
+    height: 118px;
+    top:25px;
+    right:0;
+    position:absolute;
+    background:white;
+    border: 1px solid #cdcdcd;
+    z-index: 1;
+    display:none;
+}
+.rentedroominfo .domore2 a{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color:#39aee8;
+}
+.rentedroominfo .domore2 a:last-child{
+    border-top: 1px solid #eee;
+}
+
+
+/*******/
+.roomfn div:nth-child(8n){
+    margin-right: 0px;
+}
+.rentedroom{
+    float:left;
+    width: 172px;
+    height: 172px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    border:1px solid #e5e5e5;
+    background:url("../imgs/xianzhi.png")no-repeat center;
+    background-color:#eee;
+}
+.rentedroom .roomNum{
+    width: 152px;
+    height: 16px;
+    float:left;
+    line-height: 16px;
+    font-size: 16px;
+    color:#999;
+    padding:9px;
+    position:relative;
+    background:url("../imgs/icon_xiangxia.png")no-repeat right;
+}
+.rentedroom p:hover{
+    background:url("../imgs/icon_xiangxia_selected.png")no-repeat right;
+}
+.rentedroom .state{
+    color:#999;
+    text-align: center;
+    margin-top: 130px;
+}
+.rentedroom .domore2{
+    width: 78px;
+    height: 118px;
+    top:25px;
+    right:0;
+    position:absolute;
+    background:white;
+    border: 1px solid #cdcdcd;
+    z-index: 1;
+    display:none;
+}
+.rentedroom .domore2 a{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color:#39aee8;
+}
+.rentedroom .domore2 a:last-child{
+    border-top: 1px solid #eee;
+}
+/*modifiye*/
+.modifiyeinfo{
+    width: 420px;
+    height: 498px;
+    background:white;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    z-index: 10;
+    display:none;
+}
+.modifiyeinfo .stylename{
+    width: 100%;
+    height: 100%;
+}
+.modifiyeinfo h5{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    color:#323232;
+    
+}
+.modifiyeinfo label{
+    width: 100%;
+    height: 59px;
+    display:block;
+    border-bottom: 1px dashed #cdcdcd;
+}
+
+.modifiyeinfo label span{
+    float: left;
+    text-align: center;
+    padding-right: 20px;
+    margin-top: 22px;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 16px;
+    color:#323232;
+}
+.stylename input[type="name"],.stylename input[type="text"],.stylename select{
+    border: 1px solid #e5e5e5;
+    color: #666;
+    width: 255px;
+    height: 16px;
+    margin-bottom: 10px;
+    margin-right: 6px;
+    margin-top: 10px;
+    outline:none;
+    padding: 12px 0px 12px 20px;
+    font-size: 16px;
+    line-height:16px;
+    font-family: "微软雅黑";
+}
+.stylename select option{
+    font-size: 16px;
+    color: #666;    
+}
+.stylename select{
+    width: 276px;
+    height:44px;
+    color: #666;
+    font-size: 16px;
+    padding: 10px 0px 10px 20px;
+    font-family:'微软雅黑';
+}
+.modifiyeinfo label:first-child{
+    height:44px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.modifiyeinfo label:first-child span{
+    margin-top: 14px;
+}
+.modifiyeinfo label:first-child img{
+    float:right;
+    margin:14px;
+    cursor:pointer;
+}
+.modifiyeinfo .ads{
+    border-bottom: none;
+}
+.stylename .homepic{
+    height: 140px;
+}
+.stylename .housepic{
+    width: 120px;
+    height: 120px;
+    background:url("../imgs/icon_add-picture.png") no-repeat center;
+   position:relative;
+   float:left;
+    margin-bottom: 10px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+.stylename input[type="file"]{
+    position:absolute;  
+    outline:none;
+    display:none;
+    overflow:hidden;
+}
+.modifiyeinfo label:last-child{
+    border-bottom: none;
+}
+.housesave{
+    width: 100%;
+    height:60px;
+    background:#f5f5f5;
+    margin-top: 20px;
+    float:left;
+    position:relative;
+}
+.housesave input{
+    width: 120px;
+    height: 40px;
+    background:#eb6818;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    border-radius: 5px;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    color:#fff;
+    font-size: 16px;
+    z-index: 20;
+}
+html{
+    position:relative;
+}
+.overhide{
+    width: 100%;
+    height: 1080px;
+    background:rgba(0, 0, 0, 0.4);
+    position:absolute;
+    z-index: 19;
+    display:none;
+    /*margin:auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;*/
+}
+/*********删除房产****************/
+.deleteinfo{
+    width: 420px;
+    height: 247px;
+    background:white;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    z-index: 10;
+    display:none;
+}
+.deleteinfo .deletehead{
+    width: 100%;
+    height: 43px;
+    line-height: 43px;
+    float:left;
+    border-bottom: 1px solid #cdcdcd;
+}
+.deleteinfo .deletehead span{
+    margin-left: 20px;
+    float:left;
+}
+.deleteinfo .deletehead img{
+    float:right;
+    margin:15px 20px;
+    cursor:pointer;
+}
+.deletecontent{
+    width: 100%;
+    overflow:hidden;
+}
+.deletecontent img{
+    margin-top: 28px;
+    margin-left: 36px;
+    float:left;
+}
+.deletecontent p{
+    width: 320px;
+     margin-top: 28px;
+     margin-left: 10px;
+    line-height: 16px;
+    font-size: 16px;
+    float:left;
+}
+.deleteinfo .buttons{
+    width: 100%;
+    overflow:hidden;
+    margin-top: 70px;
+}
+.deleteinfo .buttons input{
+    width: 80px;
+    height: 40px;
+    background:#eb6818;
+    border-radius: 5px;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    color:#fff;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    float:left;
+    margin-left: 120px;
+}
+.deleteinfo .buttons .no{
+    background:#f5f5f5;
+    color:#999;
+    margin-right: 120px;
+    margin-left: 20px;
+}
+
+/************添加房产addhouse*****************************/
+.addhouserighttop{
+    float:left;
+    position:relative;
+}
+.addhouserighttop a{
+    display:block;
+    height:64px;
+    line-height: 64px;
+    font-size: 14px;
+    color:#323232;
+    float:left;
+}
+.addhouserighttop a:first-child{
+    margin-left: 20px;
+}
+.addhouserighttop a:last-child{
+    padding-left: 5px;
+    color:#cdcdcd;
+}
+
+.addhouse-navhead{
+    width:1686px;
+    overflow:hidden;
+    border-bottom: 1px solid #cdcdcd;
+
+}
+.addhouse-detailArea{
+    width: 100%;
+    height: 64px;
+    border-bottom: none;
+    line-height: 64px;
+    font-size: 16px;
+    color:#323232;
+    text-align: left;
+    float:left;
+    padding-left: 20px;
+    background:white;
+}
+.addhouse-form{
+    width: 100%;
+    height: 100%;
+}
+.addhouse-form label{
+    width: 100%;
+    display:block;
+    overflow:hidden;
+    margin-bottom: 10px;
+}
+.addhouse-form label span{
+    float: left;
+    text-align: center;
+    padding-right: 20px;
+    margin-top: 22px;
+    padding-left: 40px;
+    font-size: 14px;
+    line-height: 16px;
+    color:#323232;
+}
+.addhouse-form input{
+    border: 1px solid #e5e5e5;
+    color: #666;
+    width: 206px;
+    height: 16px;
+    margin-bottom: 10px;
+    margin-right: 6px;
+    margin-top: 10px;
+    outline:none;
+    padding: 12px 0px 12px 14px;
+    font-size: 16px;
+    line-height:16px;
+    font-family: "微软雅黑";
+}
+.addhouse-form select option{
+    font-size: 14px;
+    color: #666;    
+}
+.addhouse-form select{
+    width: 224px;
+    height:44px;
+    color: #666;
+    border: 1px solid #e5e5e5;
+    font-size: 14px;
+    padding: 10px 0px 10px 14px;
+    font-family:'微软雅黑';
+}
+.addhouse-form .housepic{
+    width: 120px;
+    height: 120px;
+    background:url("../imgs/icon_add-picture.png")no-repeat center;
+   position:relative;
+   float:left;
+    margin-bottom: 10px;
+    margin-right: 6px;
+    margin-top: 10px;
+    border:1px solid #cdcdcd;
+}
+.addhouse-form input[type="file"]{
+    position:absolute;  
+    outline:none;
+    display:none;
+    overflow:hidden;
+
+}
+.addhouse-form .addhouseNub{
+    width: 100px;
+    height: 25px;
+    font-size: 14px;
+    line-height: 25px;
+    color:#f18f47;
+    float:left;
+    margin-left: 130px;
+    cursor:pointer;
+}
+.addhouse-form .addhouseNub img{
+    float:left;
+    margin-right: 5px;
+}
+.addhouse-form .addmore{
+    width: 133px;
+    height: 28px;
+    font-size: 14px;
+    line-height: 28px;
+    color:#f18f47;
+    float:left;
+    margin-left: 100px;
+    cursor:pointer;
+}
+.addhouse-form .addmore img{
+    float:right;
+    margin-right: 5px;
+}
+.addhouse-form .muchhouse{
+    width: 100%;
+    overflow:hidden;
+    display:none;
+}
+.muchhouse .sum-floor select{
+    width: 180px;
+    margin-left: 15px;
+}
+.muchhouse .sum-floor span{
+    text-align: right;
+}
+.muchhouse .every-floor span{
+    padding-left: 27px;
+}
+.muchhouse .every-floor select{
+    width: 180px;
+}
+.muchhouse input{
+    width: 164px;
+}
+
+
+
+.addhouse-form .des{
+    font-size: 16px;
+    font-family: "微软雅黑";
+    resize:none;
+}
+.addhouse-form .way select{
+    width: 120px;
+}
+.addhouse-form #dtadress{
+    margin-left: 118px;
+    width: 353px;
+}
+.addhouse-form .positionad{
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    color:white;
+   border-radius: 5px;
+    margin:10px 0;
+    background:#eb6818;
+    cursor:pointer;
+}
+.addhouse-form .map{
+    width: 600px;
+    height: 200px;
+    margin-left: 118px;
+    border:1px solid black;
+}
+.addhouse-form .addhouse-btn input{
+    width: 120px;
+    height: 40px;
+    background: #eb6818;
+    border: none;
+    color:white;
+    cursor:pointer;
+    text-align: center;
+    border-radius: 5px;
+    padding-left: 0px;
+}
+.addhouse-form .addhouse-btn .saveadr{
+    margin-left: 118px;
+}
+.addhouse-form .addhouse-btn .goback{
+    background:transparent;
+    color:#999;
+    border:1px solid #999;
+    margin-left: 40px;
+}
+/******************添加房号addhouseNum************************/
+.addhouseNum-form{
+    width: 100%;
+    height: 100%;
+
+}
+.addhouseNum-form label{
+    width: 100%;
+    display:block;
+    overflow:hidden;
+   
+}
+.addhouseNum-form label span{
+    float: left;
+    width: 68px;
+    text-align: right;
+    padding-right: 20px;
+    margin-top: 22px;
+    padding-left: 38px;
+    font-size: 14px;
+    line-height: 14px;
+    color:#323232;
+}
+.addhouseNum-form input{
+    border: 1px solid #e5e5e5;
+    color: #666;
+    width: 206px;
+    height: 16px;
+    float:left;
+    margin-bottom: 10px;
+    margin-right: 6px;
+    margin-top: 10px;
+    outline:none;
+    padding: 12px 0px 12px 14px;
+    font-size: 16px;
+    line-height:16px;
+    font-family: "微软雅黑";
+}
+.addhouseNum-form select option{
+    font-size: 16px;
+    color: #666;    
+}
+.addhouseNum-form select{
+    width: 80px;
+    height:44px;
+    color: #666;
+    float:left;
+    border: 1px solid #e5e5e5;
+    font-size: 16px;
+    padding: 10px 0px 10px 14px;
+    font-family:'微软雅黑';
+}
+.addhouseNum-form .homepic .housepic{
+    width: 120px;
+    height: 120px;
+    background:url("../imgs/icon_add-picture.png")no-repeat center;
+   position:relative;
+   float:left;
+    margin-bottom: 10px;
+    margin-right: 6px;
+    margin-top: 10px;
+    border:1px solid #cdcdcd;
+}
+.addhouseNum-form .homepic input[type="file"]{
+    position:absolute;  
+    outline:none;
+    /*display:none;*/
+    overflow:hidden;
+    width: 80px;
+    height: 80px;
+    display:block;
+    float:left;
+    opacity:0;
+    filter:alpha(opacity=0);
+}
+.addhouseNum-form .addhouse-btn input{
+    width: 120px;
+    height: 40px;
+    background: #eb6818;
+    border: none;
+    color:white;
+    cursor:pointer;
+    text-align: center;
+    border-radius: 5px;
+    padding-left: 0px;
+}
+.addhouseNum-form .addhouse-btn .saveadr{
+    margin-left: 129px;
+}
+.addhouseNum-form .addhouse-btn .goback{
+    background:transparent;
+    color:#999;
+    border:1px solid #999;
+    margin-left: 40px;
+}
+.addhouseNum-form .inset{
+    width: 10px;
+    padding-left: 10px;
+    padding-right: 16px;
+    text-align: center;
+}
+.addhouseNum-form .housefloors{
+    margin-left: 150px;
+}
+.addhouseNum-form .cen{
+    width: 80px;
+}
+.addhouseNum-form #housesquare{
+    width: 180px;
+}
+.addhouseNum-form .square{
+    width: 80px;
+}
+.addhouseNum-form .first-square{
+    margin-left: 30px;
+}
+.addhouseNum-form .setyourself{
+    width: 140px;
+    height: 40px;
+    float:left;
+    background:url("../imgs/add-custom-configuration.png")no-repeat;
+    cursor:pointer;
+    margin-top: 20px;
+    margin-left: 126px;
+}
+.checkboxone{
+    width: 12px;
+    height: 12px;
+    position:relative;
+    float:left;
+    cursor:pointer;
+    border:1px solid #cdcdcd;
+    overflow:hidden;
+    /*background:url("../imgs/selected.png") no-repeat center;*/
+    margin-top: 24px;
+}
+.addhouseNum-form .moreover{
+    width: 41px;
+    height: 14px;
+    background:url("../imgs/moreover.png")no-repeat;
+    overflow:hidden;
+    cursor:pointer;
+    float:left;
+    margin:20px;
+}
+.checkmore input{
+    width: 12px;
+    height: 12px;
+    float:left;
+    margin-top: 22px;
+}
+.checkmore .checktext{
+    padding: 0;
+    width:50px;
+    text-align: left;
+    padding-left: 11px;
+    float:left;
+}
+.checkmore .wc{
+    width: 80px;
+}
+.addhouseNum-form .homepic{
+     margin-top: 20px;
+     cursor:pointer;
+}
+.addhouseNum-form .homepic .fivepic{
+    padding: 0;
+    font-size: 12px;
+    color:#666;
+    width: 80px;
+    float:left;
+    text-align: center;
+    margin-top:118px;
+}
+.addhouseNum-form .hosuedes{
+    margin-top: 20px;
+}
+.addhouseNum-form .addhouse-btn{    
+    margin-top:30px;
+}
+/********自定义配置******/
+.setfree{
+    width: 420px;
+    height: 224px;
+    background:white;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    display:none;
+}
+.setfree p{
+    float:left;
+    width: 100%;
+    height: 43px;
+    line-height: 43px;
+    margin-right: 12px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.setfree span{
+    margin-left: 12px;
+    float:left;
+}
+.setfree .val{
+    width: 100%;
+    height:120px;
+    float:left;
+}
+.setfree  .inputval{
+    width: 275px;
+    height: 40px;
+    margin:20px 40px;
+    float:left;
+    border:1px solid #cdcdcd;
+}
+.setfree  .inputval input{
+    width: 100%;
+    height: 38px;
+    outline:none;
+    border:none;
+}
+.setfree .addhouse-btn{
+    width: 100%;
+    float:left;
+    height: 60px;
+    background:#f5f5f5;
+}
+.setfree .addhouse-btn input{
+    width: 120px;
+    height: 40px;
+    background: #eb6818;
+    border: none;
+    color:white;
+    cursor:pointer;
+    text-align: center;
+    border-radius: 5px;
+    padding-left: 0px;
+    margin-top: 10px;
+    outline:none;
+}
+.setfree .addhouse-btn .saveadr{
+    margin-left: 80px;
+}
+.setfree .addhouse-btn .goback{
+    background:transparent;
+    color:#999;
+    border:1px solid #999;
+    margin-left: 40px;
+}
+/******************租赁合同模板agreement***********/
+.muban{
+    width: 320px;
+    height: 220px;
+    border:1px solid #cdcdcd;
+    float:left;
+    border-radius: 5px; 
+    margin: 20px;
+    margin-bottom: 400px;
+    background:url("../imgs/icon_wenjian.png") no-repeat 124px 30px;
+}
+.muban .titlemuban{
+    width: 96px;
+    height: 17px;
+    line-height: 17px;
+    float:left;
+    margin-left: 117px;
+    margin-top: 132px;
+}
+.muban .btns{
+    width: 100%;
+    overflow:hidden;
+    float:left;
+}
+.muban a{
+    width: 106px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    float:left;
+    border-top:1px solid #cdcdcd;
+    margin-top: 22px;
+    background:#f5f5f5;
+    border-right: 1px solid #cdcdcd;
+}
+.muban a:last-child{
+    border-right: none;
+}
+/******************添加合同模板adddagreement*******************/
+
+.addhouse-detailArea{
+    position: relative;
+}
+.addhouse-navhead .gobackto{
+    width: 120px;
+    height: 44px;
+    position: absolute;
+    top:10px;
+    left:1366px;
+     z-index: 11;
+    background:url("../imgs/return_default.png")no-repeat center;
+}
+.addhouse-navhead .savemuban{
+    width: 148px;
+    height: 44px;
+    position: absolute;
+    top:10px;
+    left:1506px;
+    z-index: 11;
+    background:url("../imgs/Save-contract-template.png")no-repeat center;
+}
+.rooms .titleM,.titleC,.content{
+    width: 100%;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    padding:10px 0px 10px 20px;
+    overflow:hidden;
+}
+.rooms .titleC{
+    width: 1634px;
+    height: 30px;
+    margin-left:20px;
+    border:1px solid #cdcdcd;
+}
+.rooms .titleC input{
+    width: 100%;
+    height:28px;
+    outline:none;
+    border:none;
+    font-size: 14px;
+    color:#666;
+}
+#write{
+    margin-left: 20px;
+    overflow:hidden;
+}
+.footer2{
+    width: 1920px;
+    height:40px;
+    margin-top: 24px;
+    background:#484848;
+    float:left;
+    position:absolute;
+    bottom:-64px;
+    z-index: -1;
+}
+.footer2 p{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    color:#f5f5f5;
+    font-size: 14px;
+
+}
+/***************转介绍referral******************/
+.qrcode{
+    width: 100%;
+    height: 275px;
+}
+.qrcodeP{
+    width: 180px;
+    height: 100%;
+    margin: 30px 30px 0px  30px;
+    float:left;
+}
+.qrcodeimg{
+    width: 180px;
+    height: 180px;
+    border:1px solid #cdcdcd;
+    float:left; 
+      
+}
+.qrcodeC{
+    margin-top: 30px;
+    height:16px;
+    line-height: 16px;
+    float:left;
+}
+.qrcodeT{
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+}
+.qrcodetotal{
+    width: 100%;
+    overflow:hidden;
+     border-bottom:1px solid #cdcdcd;
+}
+.qrcodetotal span{
+    line-height: 16px;
+    float:left;
+    margin:0px 0px 30px 30px;
+}
+.qrcodetotal span:last-child{
+    color:red;
+    float:right;
+    margin-right: 30px;
+}
+.qrcodetotal a{
+    line-height: 16px;
+    float:right;
+    color:red;
+}
+.roomsreferr{
+    width: 1686px;
+    height:872px;
+    padding-bottom: 90px;
+    background:white;
+}
+
+
+/*******************房子报修信息repair***************/
+.roomsrepair{
+    width: 1686px;
+    height:872px;
+    padding-bottom: 90px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    background:white;
+}
+.roomsrepair p{
+    width: 100%;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    padding:10px 0px 10px 20px;
+    overflow:hidden;
+}
+.repairinfo{
+    width: 1686px;
+    overflow:hidden;
+}
+.repairinfo .repairtitle{
+    width: 100%;
+    height: 59px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.repairinfo .repairtitle span{
+    float:left;
+    height: 100%;
+    line-height: 59px;
+    margin-left: 39px;
+}
+.repairinfo .repairtitle img{
+    float:right;
+    margin-top:17px;
+    margin-right: 20px;
+}
+.repairC{
+    width: 100%;
+    height: 223px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.repairC p:first-child{
+    height: 16px;
+    line-height: 16px;
+    padding-top: 20px;
+}
+.repairC p{
+    height: 14px;
+    line-height: 14px;
+    padding-left: 39px;
+    float:left;
+}
+.repairP{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    
+}
+.repairP .repairimg{
+    width: 80px;
+    height: 80px;
+    background:#d6d6d6;
+    float:left;
+    margin-left: 39px;
+}
+.repairP a{
+    width: 100px;
+    height: 44px;
+    color:white;
+    line-height: 44px;
+    border-radius: 5px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+.repairP .repairself{
+    background:#39aee8;
+    top:36px;
+    left:1456px;
+}
+.repairP .repairstrem{
+    background:#eb6818;
+    top:36px;
+    left:1566px;
+}
+
+
+
+/****************星级评分规则star*********************/
+.starhouse-navhead{
+    background:white;
+    width:1686px;
+    overflow:hidden;
+    border-bottom: 1px solid #cdcdcd;
+}
+.starrepair{
+    width: 1686px;
+    height:872px;
+    padding-bottom: 90px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    background:white;
+}
+.starinfo{
+    width: 1686px;
+    overflow:hidden;
+
+}
+.starinfo .startitle{
+    width: 100%;
+    overflow:hidden;
+    border-bottom: 1px solid #cdcdcd;
+}
+.starinfo .startitle a{
+    float:left;
+    font-size: 14px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    margin-left: 20px;
+}
+.starinfo .startitle a:hover{
+    color:#f18f47;
+}
+.staractive{
+    color:#f18f47;
+}
+.starinfo .startitle img{
+    float:right;
+    margin-top:17px;
+    margin-right: 20px;
+}
+.starC{
+    width: 100%;
+    height: 161px;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.starP{
+    width: 100px;
+    height: 100%;
+    margin-left: 20px;
+    position: relative;
+    float:left;
+    
+}
+.starP .starimg{
+    width: 100px;
+    height: 100px;
+    background:#d6d6d6;
+    float:left;
+    margin-top: 20px;
+    
+}
+.starP .rentername{
+    width: 100%;
+    height: 14px;
+    font-size: 14px;
+    float:left;
+    line-height: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+.starcontent{
+    width: 1000px;
+    height: 100%;
+    float:left;
+}
+.starC .starscore{
+    width: 115px;
+    height: 16px;
+    margin:20px;
+}
+.starC .starscore img{
+    float:left;
+}
+.jugyed{
+    width: 100%;
+    height: 60px;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: left;
+    margin-left: 20px;
+}
+.jugytime{
+    width: 100%;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: left;
+    margin-left: 20px;
+    color:#727272;
+    margin-top: 10px;
+}
+.starT{
+    height: 60px;
+    line-height: 60px;
+    float:left;
+    margin-left: 29px;
+}
+#star{
+    width: 115px;
+    height: 60px;
+    line-height: 60px;
+    float:left;
+    margin:0 20px 0 20px;
+}
+#star img{
+    display:inline-block;
+}
+.rules{
+    height: 60px;
+    line-height: 60px;
+    float:left;
+    color:#f18f47;
+    font-size: 14px;
+}
+.starback{
+    float:right;
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 120px;
+    height: 44px;
+    background:url("../imgs/return_default.png")no-repeat center;
+}
+   /***************评分规则starrules**************/
+   .rulestext{
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    padding: 0px 29px;
+   }
+
+
+
+   /*******************个人信息 personalinfo*******************/
+.personal-navhead{
+    background:white;
+    width:1686px;
+    overflow:hidden;
+    border-bottom: 1px solid #cdcdcd;
+}
+.personal-navhead .personalT{
+    height: 60px;
+    line-height: 60px;
+    float:left;
+    margin-left: 29px;
+}
+.personalC{
+    width: 1686px;
+    height:872px;
+    background:white;
+}
+.personalP{
+    width: 100%;
+    height: 151px;
+    border-bottom: 1px solid #cdcdcd;
+
+}
+.personalP .personalimg{
+    width: 100px;
+    height: 100%;
+    float:left;
+    margin-left: 29px;
+}
+.personalP .personalimg img{
+    float:left;
+    margin-top: 20px;
+}
+.personalP .personalimg a{
+    width: 100%;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    margin-top: 10px;
+    float:left;
+}
+.personalM{
+    width: 180px;
+    height:100%;
+    float:left;
+    margin-left: 39px;
+}
+.personalM p:first-child{
+    height: 14px;
+    line-height: 14px;
+    margin-top: 20px;
+}
+.personalM .Pmoney{
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+    color:#ff0000;
+    margin:26px 0;
+}
+.payNum{
+    height: 14px;
+    line-height: 14px;
+    float:left;
+    font-size: 14px;
+}
+.changePN{
+    height: 14px;
+    line-height: 14px;
+    float:left;
+    color:#ff0000;
+    font-size: 14px;
+    display:block;
+    margin-left: 10px;
+}
+.handle{
+    width: 175px;
+    height: 100%;
+    float:left;
+    margin-left: 20px;
+}
+.handle a{
+    width: 80px;
+    height: 28px;
+    display:block;
+    background:#39aee8;
+    color:white;
+    text-align: center;
+    line-height: 28px;
+    float:left;
+    margin-top: 20px;
+}
+.handle .pushM{
+    background:#f18f47;
+    margin-left: 10px;
+}
+.handle .Mdetail{
+    margin:0;
+    background:none;
+    color:#999;
+    font-size: 14px;
+    text-align: left;
+}
+.personalC form{
+    width: 500px;
+    height: 100%;
+    margin-left: 29px;
+}
+.personalC form label{
+    width: 100%;
+    height: 28px;
+    display:block;
+    margin-bottom: 26px;
+}
+.personalC form label:first-child{
+    margin-top: 19px;
+}
+.personalC form label span{
+    display:block;
+    float:left;
+    width: 80px;
+    height:16px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: left;
+
+}
+.personalC form label:first-child input{
+    margin-left: 68px;
+    width: 140px;
+    height: 8px;
+    padding:10px;
+    outline:none;
+    border:1px solid #cdcdcd;
+}
+.personalC .sexychoice .keep{
+    margin-left: 68px;
+}
+.personalC form label p{
+    width: 60px;
+    height:100%;
+    line-height: 28px;
+    text-align: left;
+    font-size: 14px;
+    float:left;
+    margin-left: 68px;
+}
+.personalC form label .Mdf{
+    height:100%;
+    line-height: 28px;
+    text-align: left;
+    font-size: 14px;
+    float:left;
+    color:red;
+
+}
+/*******修改密码绑定支付帐号personalinfo-pw**************/
+
+.changeBind{
+    height: 14px;
+    line-height: 14px;
+    float:left;
+    color:#f18f47;
+    font-size: 14px;
+    display:block;
+    margin-left: 10px;
+}
+.Newpwd input{
+    width: 160px;
+    height:8px;
+    font-size: 14px;
+    color:#999;
+    font-family: "微软雅黑";
+    padding:10px;
+    outline:none;
+    border:1px solid #cdcdcd;
+}
+.NewYzm .yzm{
+    width: 60px;
+    height: 6px;
+    font-size: 14px;
+    color:#999;
+    font-family: "微软雅黑";
+    padding:10px;
+    outline:none;
+     border:1px solid #cdcdcd;
+
+
+}
+.NewYzm .send_code_btn{
+    width: 80px;
+    height: 30px;
+    background:#f5f5f5;
+    outline:none;
+    color:#999;
+    border:none;
+    margin-left: 10px;
+}
+.openpwd{
+    height:100%;
+    line-height: 28px;
+    text-align: left;
+    font-size: 14px;
+    float:left;
+    color:#f18f47;
+    margin-left: 68px;
+}
+.perBtn a{
+    width: 118px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    display:block;
+    float:left;
+    background:#f5f5f5; 
+    color:#999;
+    border:1px solid #cdcdcd;
+    border-radius: 5px;
+}
+.perBtn a:last-child{
+    background:#eb6818;
+    color:white;
+    border:none;
+    margin-left: 20px;
+    border:1px solid #eb6818;
+}
+/*****************新手指南freshman***********/
+.freshrooms{
+
+    width: 1686px;
+    height:872px;
+    background:white;
+
+}
+/**************填写充值金额recharge**************/
+.starrepair form{
+    width: 500px;
+    overflow: hidden;
+    margin-left: 40px;
+}
+.starrepair form label{
+    width: 100%;
+    height: 34px;
+    display:block;
+    float:left;
+}
+.starrepair .rechargeuse{
+    height: 100%;
+    line-height: 30px;
+    display:block;
+    float:left;
+    margin-top: 33px;
+}
+.starrepair .rechargeM input{
+    width: 120px;
+    height: 28px;
+}
+.starrepair form label span{
+    width: 80px;
+    height: 16px;
+    line-height: 30px;
+    float:left;
+    outline:none;
+}
+.renextstep{
+    width: 120px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color:white;
+    border-radius: 5px;
+    background:#eb6818;
+    margin:41px 0px 34px 40px;
+}
+.chargeTips{
+    width: 842px;
+    height: 145px;
+    background:#f9d1b9; 
+    border:1px solid #f18f47;
+    margin-left: 40px;
+}
+.chargeTips p{
+    height: 30px;
+    line-height: 30px;
+    padding-left: 18px;
+}
+.chargeTips p:first-child{
+    padding-top: 25px;
+}
+/***********提现金额takecash*********************/
+.starrepair .takeC{
+    margin-top: 33px;
+}
+.starrepair .takeC input{
+    width: 120px;
+    height: 28px;
+
+}
+/************提现成功takecash-success*********************/
+
+.takecash{
+    width: 1686px;
+    height:872px;
+    overflow-x: hidden;
+    background:white;
+    position:relative;
+}
+.success{
+    width: 362px;
+    height: 500px;
+    margin-top:83px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+.success img{
+    float:left;
+    margin-left: 20px;
+}
+.success p{
+    width: 100%;
+    height: 14px;
+    float:left;
+    line-height: 14px;
+    color:#868686;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.cashback{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color:white;
+    float:left;
+    border-radius: 5px;
+    background:#eb6818;
+    margin-left: 90px;
+}
+.success span{
+    height: 16px;
+    line-height: 16px;
+    color:#727272;
+    float:left;
+    margin-top: 24px;
+}
+.success #countT{
+    height: 16px;
+    line-height: 16px;
+    color:#727272;
+    float:left;
+}
+
+
+
+
+/***********支付密码rechargePWD*********************/
+.takeC .forgetPwd{
+    height:14px;
+    display:block;
+    line-height: 14px;
+    float:right;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-right: 300px;
+}
+
+/*****************开启支付密码openpaypwd************/
+
+.Openform{
+    width: 1686px;
+    height:872px;
+    overflow-x: hidden;
+    background:white;
+}
+.Openform form{
+    width: 500px;
+    overflow: hidden;
+    margin-left: 40px;
+}
+.Openform form label{
+   width: 100%;
+    height: 34px;
+    display:block;
+    float:left;
+}
+.Openpwd{
+    margin-top: 20px;
+}
+.Openpwd2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.Openpwd input,.Openpwd2 input{
+    width: 160px;
+    height:8px;
+    font-size: 14px;
+    color:#999;
+    font-family: "微软雅黑";
+    padding:10px;
+    outline:none;
+    border:1px solid #cdcdcd;
+}
+.OpenYzm .yzm{
+    width: 60px;
+    height: 6px;
+    font-size: 14px;
+    color:#999;
+    font-family: "微软雅黑";
+    padding:10px;
+    outline:none;
+     border:1px solid #cdcdcd;
+
+
+}
+.OpenYzm .send_code_btn{
+    width: 82px;
+    height: 28px;
+    background:#f5f5f5;
+    outline:none;
+    color:#999;
+    border:1px solid #cdcdcd;
+    margin-left: 10px;
+    cursor:pointer;
+}
+#openBtn{
+    height: 44px;
+    margin: 40px 0;
+}
+#openBtn a{
+    width: 118px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    display:block;
+    float:left;
+    background:#f5f5f5; 
+    color:#999;
+    border:1px solid #cdcdcd;
+    border-radius: 5px;
+}
+#openBtn a:last-child{
+    background:#eb6818;
+    color:white;
+    border:none;
+    margin-left: 20px;
+    border:1px solid #eb6818;
+}
+
+/*****************绑定支付宝帐号bind-user**************/
+.choiceUser{
+    margin-top: 20px;
+    line-height: 34px;
+    margin-bottom: 20px;
+}
+.choicePay .checkboxone{
+  margin-top: 0;
+}
+.choicePay .checktext{
+    height: 14px;
+    line-height: 14px;
+    display:block;
+    float:left;
+    margin-left: 20px;
+}
+/**************充值方式choicestyle*****************************/
+.payfor{
+    width: 500px;
+    height: 125px;
+    float:left;
+    margin-left: 233px;
+}
+.payfor .payedM{
+    width: 100%;
+    height:18px;
+    font-size: 18px;
+    line-height: 18px;
+    float:left;
+    margin:20px 0 18px 0;
+}
+.payfor .payedM .Mnum{
+    color:red;
+    display:inline;
+}
+.payfor .orderN,.orderTip{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    float:left;
+}
+.payfor .orderTip span{
+    color:red;
+    display:inline;
+}
+.paystyle{
+    width: 1686px;
+    height:236px;
+    margin-bottom: 511px;
+  /*  overflow-y:scroll;
+    overflow-x: hidden;*/
+    background:white;
+}
+.paystyle form{
+    width: 100%;
+   overflow: hidden;
+}
+.paystyle form label{
+    width: 100%;
+    height:50px;
+    display:block;
+}
+.paystyle form label input{
+   margin-top: 20px;
+   margin-left: 30px;
+   margin-right: 20px  ;
+   float:left;
+}
+.paystyle form label div{
+    width: 178px;
+    height: 42px;
+    border:1px solid #cdcdcd;
+    float:left;
+}
+.paystyle form label:first-child{
+    margin-top: 14px;
+}
+.paystyle form label div img{
+    margin:10px 20px;
+    float:left;
+}
+.paystyle form label div span{
+    float:left;
+    height:16px;
+    line-height: 16px;
+    margin-top: 10px;
+}
+.paystylestep{
+    width: 120px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color:white;
+    border-radius: 5px;
+    background:#eb6818;
+    margin:40px 0px 40px 62px;
+}
+/************支付二维码choiceqrcode***************/
+.nickname{
+    float:right;
+    height:14px;
+    line-height: 14px;
+    margin-right: 25px;
+    font-size: 14px;
+    color:#999;
+    margin-top: 25px;
+}
+.nickname img{
+    float:left;
+    margin-bottom: 2px;
+}
+.userimage{
+   float:right;
+   margin-right: 40px; 
+   margin-top: 10px;
+}
+.qrcodezhifubao{
+    width: 180px;
+    height: 180px;
+    float:left;
+    background: #ccc;
+    margin-top: 40px;
+    margin-left: 62px;
+}
+.paystylecode{
+    width: 1686px;
+    height:261px;
+    margin-bottom: 511px;
+    background:white;
+}
+/***************钱包明细***************/
+
+.wallet{
+    width: 1686px;
+    height:872px;
+    background:white;
+}
+.wallet .walletline{
+    width: 100%;
+    height:39px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.wallet .walletline span{
+    height: 100%;
+    line-height: 39px;
+    text-align: left;
+    float:left;
+}
+.wallet .walletline .Moneydetail{
+    margin-left: 33px;
+    width: 240px;
+}
+.Paydetail{
+    width: 200px;
+}
+.Payday{
+     margin-left: 1098px;
+}
+
+/***********快捷操作预约看房bookinghouse***/
+
+.deleteall{
+    float:right;
+    margin-right: 40px;
+    margin-top: 10px;
+    width: 140px;
+    height: 44px;
+    border-radius: 5px;
+    background:url("../imgs/deletem_03.png")no-repeat center;
+}
+.bookbox{
+    margin-top: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float:left;
+    width: 12px;
+    height: 12px;
+    outline:none;
+    border:1px solid #cdcdcd;
+}
+#bookingNum{
+    float:left;
+    height: 100%;
+    line-height: 59px;
+    margin:0;
+}
+.deletebook{
+    width: 60px;
+    height: 44px;
+    background:#f5f5f5;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 5px;
+    float:left;
+    margin-left: 1266px;
+    margin-top: 8px;
+    cursor:pointer;
+}
+.seehouse {
+    width: 100%;
+    height: 114px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.seehouse p{
+    padding-left: 60px;
+}
+/*********未支付账单unpayed.html**************/
+.unpaynavhead{
+    background:#eee;
+    width:1686px;
+    overflow:hidden;
+}
+.unpaynavhead a{
+    width: 152px;
+    height: 63px;
+    float:left;
+    text-align: center;
+    line-height: 63px;
+    cursor:pointer;
+}
+.unpaynavhead img{
+    float:left;
+    margin-left: 20px;
+    cursor:pointer;
+}
+.Up-active{
+    background:white;
+}
+.useBtn{
+    width: 410px;
+    overflow:hidden;
+    float:right;
+}
+.unpayform{
+    width: 1686px;
+    height:1052px;
+    overflow-y: scroll;
+    background:white;
+}
+.unpayform2{
+    width: 1686px;
+    height:1052px;
+    overflow-y: scroll;
+    background:white;
+    display:none;
+}
+.allBills{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+}
+.allBills input{
+    margin-left: 20px;
+}
+.delayPay{
+    width: 1646px;
+    overflow:hidden;
+    float:left;
+    margin-left:20px;
+    margin-bottom: 10px;
+    border:1px solid #cdcdcd;
+    /*margin-bottom: 20px;*/
+}
+.delayPay .delayPayT{
+    width: 100%;
+    height: 60px;
+    background:#f5f8fa;
+    border-bottom: 1px solid #cdcdcd;
+    overflow-y:scroll;
+}
+.delayPay .delayPayT .delaypass1{
+    float:left;
+    margin-left: 10px;
+    margin-top: 24px;
+    margin-right: 20px;
+}
+.delayPayT .delaypass{
+    width: 94px;
+    height: 20px;
+    line-height: 20px;
+    text-align: right;
+    float:left;
+    margin-top: 20px;
+    border-left: 4px solid red;
+}
+.delayPayT .delaymsg{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    display:block;
+    cursor:pointer;
+    background:#d1dade;
+    float:left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.delayPayT img{
+    float:right;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor:pointer;
+}
+.delayPayC{
+    width: 100%;
+    height: 690px;
+    overflow-y: scroll;
+    display:none;
+}
+.delayPayC .delayformT .delayhouse1{
+    float:left;
+    margin-left: 10px;
+    margin-top: 24px;
+    margin-right: 20px;
+}
+.delayformT .delayhouse{
+    padding-left: 10px;
+    height: 20px;
+    line-height: 20px;
+    text-align: right;
+    float:left;
+    margin-top: 20px;
+    border-left: 4px solid red;
+}
+.delayformT .delaytime,.delayDeadline,.zhouqi{
+    height: 20px;
+    line-height: 20px;
+    text-align: right;
+    float:left;
+    margin-top: 20px;
+    margin-left: 10px   ;
+}
+.delayformT .delaytime{
+    margin-left: 300px;
+}
+.delayDeadline{
+    color:red;
+}
+.delayformT .Dbtns{
+    width: 360px;
+    overflow:hidden;
+    float:right;
+    margin-right: 20px;
+}
+.delayformT a{
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor:pointer;
+    float:left;
+    background:#eb6818;
+    color:white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.delayformT .deletshouzu{
+    background:transparent;
+    color:black;
+    border:1px solid #cdcdcd;
+}
+.delayform{
+    width: 1606px;
+    overflow:hidden;
+    margin: 19px;
+    float:left;
+    box-sizing: border-box;
+}
+.delayform .delayformT{
+    width: 100%;
+    height: 60px;
+    background:#f5f8fa;
+    float:left;
+    border:1px solid #cdcdcd;
+    border-bottom: none;
+    box-sizing: border-box;
+}
+.delayform table{
+    width: 100%;
+    overflow:hidden;
+    float:left;
+    table-layout:fixed; 
+    empty-cells:show; 
+    border-collapse: collapse; 
+    margin:0 auto; 
+    border:1px solid #cdcdcd;
+    box-sizing: border-box;
+}
+.delayform table th{
+    background:#f5f8fa;
+}
+.delayform table th,td{
+    height:40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    border:1px solid #cdcdcd;
+}
+.delayform .blink{
+    width: 1604px;
+    height: 9px;
+    border:1px solid #cdcdcd;
+    border-top: none;
+    float:left;
+}
+.otherPay{
+    width: 100%;
+    border-left:1px solid #cdcdcd;
+    overflow:hidden;
+   box-sizing: border-box;
+
+}
+.otherPay li{
+    width: 25%;
+    height: 40px;
+    line-height: 40px;
+    float:left;
+    border-bottom:1px solid #cdcdcd;
+    border-right:1px solid #cdcdcd;
+    box-sizing: border-box;
+    text-align: left;
+    padding-left: 20px;
+}
+.mustPay{
+    width: 100%;
+    border-left:1px solid #cdcdcd;
+    overflow:hidden;
+   box-sizing: border-box;
+}
+.mustPay li{
+    width: 33.33%;
+    height: 40px;
+    line-height: 40px;
+    float:left;
+    border-bottom:1px solid #cdcdcd;
+    border-right:1px solid #cdcdcd;
+    box-sizing: border-box;
+    text-align: left;
+    padding-left: 20px;
+}
+/***********抄表*******************************/
+.checkform{
+    width: 420px;
+    height: 418px;
+    background:white;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0px;
+    bottom:0;
+    margin:auto;
+    z-index: 10;
+    display:none;
+}
+.checkform label{
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    float:left;
+     border-bottom: 1px solid #cdcdcd;
+}
+.checkform .list4{
+    margin-left:118px;
+}
+.checkform .cost{
+    color:#f18f47;
+    padding-left: 40px;
+}
+.checkform label span{
+    height: 100%;
+    line-height: 44px;
+    float:left;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 20px;
+}
+.checkform label img{
+    float:right;
+    margin:15px;
+    cursor:pointer;
+}
+.checkform label input{
+    outline:none;
+    width: 80px;
+    height: 20px;
+    float:left;
+    padding:10px;
+    margin-top: 2px;
+}
+.checkform .list2,.costDegre{
+    margin-left:20px;
+    width: 56px;
+}
+.checkform .list3,.nowform{
+    margin-left:40px;
+}
+.costname{
+    width: 42px;
+}
+.costBtn{
+    height: 60px;
+    width: 100%;
+    float:left;
+    background:#f5f5f5;
+    margin-top: 19px;
+}
+.costBtn a{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color:white;
+    background:#eb6818;
+    margin:10px 0 0 145px;
+    border-radius: 5px;
+}
+.overhide2{
+    width: 100%;
+    height: 1280px;
+    background:rgba(0, 0, 0, 0.4);
+    position:absolute;    
+    z-index: 19;
+    display:none;
+    margin:auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+.mdform{
+    width: 500px;
+    height: 658px;
+    position:absolute;
+    z-index: 22;
+    display:none;
+    margin:auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    /*display:block;*/
+    background:white;
+}
+.mdform-t{
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.mdform-t span{
+    height: 100%;
+    line-height: 44px;
+    margin-left:20px ;
+    float:left;
+    font-size: 14px;
+}
+.mdform-t img{
+    float:right;
+    margin-top: 15px;
+    margin-right: 9px;
+}
+.collect{
+    width: 100%;
+    height: 220px;
+    float:left;
+    border-bottom: 1px solid #cdcdcd;
+}
+.collect label{
+    width: 100%;
+    height: 40px;
+    float:left;
+    margin-bottom: 11px;
+
+}
+.collect label:first-child{
+    margin-top: 25px;
+}
+.collect label span{
+    height: 100%;
+    line-height: 40px;
+    float:left;
+    font-size: 14px;
+
+}
+.collect .items{
+    width: 56px;
+    margin-left: 20px;
+}
+.collect .items2{
+    margin-left: 20px;
+}
+.collect .itemday{
+    width: 140px;
+    height: 40px;
+    border:1px solid #cdcdcd;
+     position:relative;
+}
+.collect  .itemday input{
+    outline:none;
+    width: 120px;
+    height: 10px;
+    border:none;
+    padding: 10px 0px 10px 10px;
+
+}
+.collect  .itemday:last-child{
+    margin-left: 20px;
+}
+.collect  .itemday img{
+    position: absolute;
+    right:8px;
+    top:8px;
+}
+.collect .itemM{
+    width: 298px;
+    height: 18px;
+    float:left;
+    outline:none;
+    border:1px solid #cdcdcd;
+    padding:10px;
+      margin-left: 20px;
+}
+.costDetail{
+    width: 100%;
+    height: 293px;
+    float:left;
+    overflow-y: scroll;
+}
+.costDetail-t{
+    width: 100%;
+    height: 40px;
+    float:left;
+    font-size: 14px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.costDetail-t span{
+    height: 100%;
+    line-height: 40px;
+    float:left;
+    margin-left: 20px;
+}
+.costDetail-t a{
+    width: 88px;
+    height: 100%;
+    line-height: 40px;
+    cursor:pointer;
+    float:right;
+    margin-right: 21px;
+}
+.costDetail-t a img{
+    float:left;
+    margin:10px 10px 0px 0px;
+}
+.costlist{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    float:left;
+    font-size: 14px;
+     border-bottom: 1px solid #cdcdcd;
+}
+.costlist img{
+    margin:10px 10px 0 20px;
+    float:left;
+}
+.costlist .powername{
+    width: 56px;
+    height: 100%;
+    line-height: 40px;
+    float:left;
+}
+.costlist .power{
+    width: 85px;
+    float:left;
+    font-size: 12px;
+    text-align: center;
+}
+.costlist .othername{
+    width: 110px;
+    float:left;
+    font-size: 12px;
+}
+.costlist .otherCost{
+    width: 80px;
+    height: 12px;
+    padding: 10px;
+    float:right;
+    outline:none;
+    border:1px solid #cdcdcd;
+    margin-top: 3px;
+    margin-right: 20px;
+}
+.costlist .power p{
+    width: 100%;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+}
+.costlist .rate{
+    width: 55px;
+    float:left;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 20px;
+}
+.costlist .powerM{
+    width: 60px;
+    float:left;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 40px;
+
+}
+.costlist .fixpower{
+    width: 55px;
+    float:right;
+    font-size: 12px;
+    text-align: center;
+    margin-right: 20px;
+    color:#006f98;
+
+}
+.bottomBtn{
+    width: 500px;
+    height: 60px;
+    background:#f5f5f5;
+    float:left;
+    margin-top: 39px;
+}
+.bottomBtn .Pbtns{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color:white;
+    outline:none;
+    border:none;
+    background:#eb6818;
+    cursor:pointer;
+    border-radius: 5px;
+    margin-left: 190px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: "微软雅黑";
+}
+.reduce{
+    width: 100%;
+    overflow:hidden;
+    font-size: 14px;
+
+}
+.reduceT{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+     border-bottom: 1px solid #cdcdcd;
+     padding-left: 20px;
+}
+.reducelist{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    float:left;
+    font-size: 14px;
+     border-bottom: 1px solid #cdcdcd;
+}
+.reducelist img{
+    margin:10px 10px 0 20px;
+    float:left;
+}
+.reducename{
+    width: 80px;
+    height: 12px;
+    padding: 10px;
+    float:left;
+    outline:none;
+    border:1px solid #cdcdcd;
+    margin-top: 3px;
+}
+.reduceCost{
+    width: 80px;
+    height: 12px;
+    padding: 10px;
+    float:right;
+    outline:none;
+    border:1px solid #cdcdcd;
+    margin-top: 3px;
+    margin-right: 20px;
+}
+.addreduce{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    float:left;
+    border-bottom: 1px solid #cdcdcd;
+}
+.addreduceT{
+    width: 200px;
+    height: 100%;
+    line-height: 40px;
+    margin-left: 20px;
+}
+.addreduceT img{
+    float:left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.beizhu{
+    width: 100%;
+    height: 140px;
+    border-bottom: 1px solid #cdcdcd;
+    float:left;
+}
+.beizhu span{
+    height: 100%;
+    line-height: 140px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float:left;
+}
+.beizhu textarea{
+    width: 320px;
+    height: 120px;
+    float:left;
+    outline:none;
+    border:1px solid #cdcdcd;
+    margin-top: 9px;
+}
+/************添加费用addcostD******/
+.addcostD{
+    width: 420px;
+    height: 359px;
+    background:white;
+    position:absolute;
+    z-index: 22;
+    display:none;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    top:200px;
+    bottom:0;
+}
+.addcostD form{
+    width: 100%;
+    overflow:hidden;
+}
+.costDT{
+    width: 100%;
+    height: 44px;
+    float:left;
+    border-bottom:1px solid #cdcdcd;
+
+}
+.costDT span{
+    height: 100%;
+    margin-left: 20px;
+    line-height: 44px;
+    float:left;
+}
+.costDT img{
+    float:right;
+    margin-top: 15px;
+    margin-right: 20px;
+   
+}
+.addcostD form label input{
+    outline:none;
+    border:1px solid #cdcdcd;
+     padding:0 20px;
+}
+.addcostD form label{
+    width: 100%;
+    height: 60px;
+    display:block;
+    float:left;
+    border-bottom:1px solid #cdcdcd;
+}
+.addcostD form label span{
+    height: 100%;
+    width: 64px;
+    margin-left: 20px;
+    line-height: 60px;
+    float:left;
+}
+.addlist .feiyongname{
+    width: 140px;
+    height: 40px;
+    float:left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.addlist img{
+    margin-left: 10px;
+    margin-top: 10px;
+    float:left;
+    cursor:pointer;
+}
+.addlist .Rstyle{
+    width: 289px;
+    height: 40px;
+    font-size: 14px;
+    color:#323232;
+    outline:none;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding:0 20px;
+    font-family: "微软雅黑";
+
+}
+.addlist .unit{
+    width: 169px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+    float:left;
+    border-right: none;
+
+}
+.addlist .Runit{
+    width: 80px;
+    height: 42px;
+    outline:none;
+    font-family: "微软雅黑";
+    margin-right: 0;
+    float:left;
+    padding-left: 10px;
+    margin-top: 10px;
+
+}
+.addlist .initread{
+    width: 249px;
+    height: 40px;
+    outline:none;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.bBtn{
+    width: 100%;
+    height: 60px;
+    background:#f5f5f5;
+    margin-top: 10px;
+}
+.bBtn .btnsave{
+    width: 120px;
+    height: 40px;
+    outline:none;
+    border:none;
+    background:#eb6818;
+    border-radius: 5px;
+    margin-left: 145px;
+    margin-top: 10px;
+    color:white;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    cursor:pointer;
+}
+/***************选择费用************/
+.choiceF{
+    width: 420px;
+    height: 600px;
+    background:white;
+     position:absolute;
+    z-index: 22;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    top:200px;
+    bottom:0;
+    display:none;
+}
+.choiceF .Fhead{
+    width: 100%;
+    height: 44px;
+    float:left;
+    border-bottom:1px solid #cdcdcd;
+
+}
+.choiceF .Fhead span{
+    height: 100%;
+    line-height: 44px;
+    margin-left: 20px;
+    float:left;
+}
+.choiceF .Fhead img{
+    float:right;
+    cursor:pointer;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+.choicelist{
+    width: 100%;
+    height: 556px;
+    overflow-y: scroll;
+}
+.choicelist li{
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    border-bottom:1px solid #cdcdcd;
+    padding-left: 20px;
+}
+.choicelist li:hover{
+    background:#eb6818;
+    color:white;
+}
+/******************account到账******/
+.account{
+    width: 440px;
+    height: 280px;
+    background:white;
+    position:absolute;
+    z-index: 22;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    top:200px;
+    bottom:0;
+      font-size: 14px;
+    display:none;
+}
+.account .accountT{
+    height: 44px;
+    line-height: 44px;
+    border-bottom:1px solid #cdcdcd;
+}
+.account .accountT span{
+    height: 100%;
+    margin-left: 20px;
+    float:left;
+}
+.account .accountT img{
+    float:right;
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor:pointer;
+}
+.account .acbody{
+    width: 100%;
+    height: 176px;
+    float:left;
+    border-bottom:1px solid #cdcdcd;
+
+}
+.accountDate {
+    width: 100%;
+    height: 70px;
+    float:left;
+}
+.accountDate span{
+    height: 100%;
+    line-height: 70px;
+    float:left;
+    margin-left: 20px;
+}
+.accountDate .acday{
+    width: 140px;
+    height: 40px;
+    border:1px solid #cdcdcd;
+    float:left;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+}
+.accountDate .acday input{
+    height: 38px;
+    width: 120px;
+    outline:none;
+    border:none;
+    padding:0 10px;
+}
+.accountDate .acday img{
+    position:absolute;
+    top:8px;
+    right:8px;
+}
+.warn{
+    width: 100%;
+    overflow:hidden;
+}
+.warn img{
+    float:left;
+    margin-left: 20px;
+}
+.warn span{
+    float:left;
+    height: 25px;
+    line-height: 25px;
+    margin-left: 14px;
+}
+.acbtns{
+    width: 100%;
+    overflow:hidden;
+}
+.acbtns input{
+    width: 120px;
+    height: 40px;
+    outline:none;
+    border:none;
+    background:#eb6818;
+    border-radius: 5px;
+    margin-top: 10px;
+    color:white;
+    margin-left: 40px;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    cursor:pointer;
+    float:left;
+}
+.acbtns .cancelac{
+    margin-left: 80px;
+    background:#f5f5f5;
+    color:#999;
+    border:#cdcdcd;
+}
+/*************发布维护publish******************/
+.publishnavhead{
+    width: 1686px;
+    height: 100px;
+    background:white;
+    margin-bottom: 20px;
+}
+.publishnavhead form{
+    width: 100%;
+    height: 100%;   
+}
+.publishnavhead form label{
+    height: 100%;
+    width: 299px;
+    display:block;
+    float:left;
+    margin-left: 40px;
+}
+.publishnavhead form label span{
+    float:left;
+    line-height: 100px;
+    font-size: 14px;
+
+}
+.publishnavhead .seachRoom,.publishnavhead select{
+    width: 180px;
+    height: 40px;
+    outline:none;
+    border:1px solid #cdcdcd;
+    float:left;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding:0 20px;
+    color:#323232;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+.publishnavhead select{
+     width: 220px;
+}
+.publishnavhead .seachBtn{
+    width: 64px;
+    height: 40px;
+    background:#eb6818;
+    position: relative;
+    border-radius: 5px;
+    cursor:pointer;
+    margin-top: 30px;
+    margin-left: -20px;
+}
+.publishnavhead .seachBtn input{
+    width: 100%;
+    height: 100%;
+    outline:none;
+    border:none;
+    background:#eb6818;
+    border-radius: 5px;
+    color:white;
+    text-align: right;
+    cursor:pointer;
+    
+}
+.publishnavhead .seachBtn img{
+position:absolute;
+top: 10px;
+left:7px;
+}
+.publish-head{
+    width: 100%;
+    height:95px;
+}
+.publish-rooms{
+    width: 1686px;
+    height:816px;
+    overflow:hidden;
+    background:white;
+}
+.publish-head img{
+    float:left;
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor:pointer;
+}
+.publish-head .unuseable{
+    width: 180px;
+    height: 100%;
+    float:right;
+    margin-right: 58px;
+}
+.publish-head a{
+    width: 80px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    display:block;
+    float:left;
+    color:white;
+    background:#eb6818;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.publish-head .unuseable .back{
+    margin-left: 10px;
+    background: #f5f5f5;
+    color:black;
+    border:1px solid #cdcdcd;
+}
+/*************unuseroom********/
+.unuseroom{
+    float:left;
+    width: 172px;
+    height: 172px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    border:1px solid #e5e5e5;
+    background-color:#eee;
+}
+.un-roomNum{
+    width: 152px;
+    height: 16px;
+    float:left;
+    line-height: 16px;
+    font-size: 16px;
+    color:#999;
+    padding:9px;
+    position:relative;
+    background:url("../imgs/icon_xiangxia.png")no-repeat right;
+}
+.un-housepay,.un-rentstate,.un-rent-date,.un-housestyle{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color:#999;
+    float:left;
+    margin-left: 10px;
+}
+.un-housestyle{
+    margin-top: 18px;
+}
+.unuseroom .domore2{
+    width: 78px;
+    height: 118px;
+    top:25px;
+    right:0;
+    position:absolute;
+    background:white;
+    border: 1px solid #cdcdcd;
+    z-index: 1;
+    display:none;
+}
+.unuseroom .domore2 a{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color:#39aee8;
+}
+..unuseroom .domore2 a:last-child{
+    border-top: 1px solid #eee;
+}
+/**************unrentroom********/
+.unrentroom{
+    float:left;
+    width: 172px;
+    height: 172px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    border:1px solid #e5e5e5;
+    background-color:#eee;
+}
+.unrentNum{
+    width: 152px;
+    height: 16px;
+    float:left;
+    line-height: 16px;
+    font-size: 16px;
+    color:#999;
+    padding:9px;
+    position:relative;
+    background:url("../imgs/icon_xiangxia.png")no-repeat right;
+}
+.unrentstyle,.unrentpay,.unrentstate{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color:#999;
+    float:left;
+    margin-left: 10px;
+}
+.unrentstyle{
+    margin-top: 18px;
+}
+.unrentroom .domore2{
+    width: 78px;
+    height: 118px;
+    top:25px;
+    right:0;
+    position:absolute;
+    background:white;
+    border: 1px solid #cdcdcd;
+    z-index: 1;
+    display:none;
+}
+..unrentroom .domore2 a{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color:#39aee8;
+}
+.unrentroom .domore2 a:last-child{
+    border-top: 1px solid #eee;
+}
+/**********确认发布************************/
+.publishInfo{
+    width: 420px;
+    height: 247px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    background:white;
+    display:none;
+}
+.publishInfo .Infohead{
+    width: 100%;
+    height: 44px;
+    font-size: 14px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.publishInfo .Infohead span{
+    height: 100%;
+    line-height: 44px;
+    float:left;
+    margin-left: 16px;
+}
+.publishInfo .Infohead img{
+    float:right;
+    margin-top: 15px;
+    margin-right: 20px;
+    cursor:pointer;
+
+}
+.publishInfo .successP{
+    height: 25px;
+    line-height: 25px;
+    width: 100%;
+    color:#eb6818;
+    float:left;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+}
+.publishInfo .othersteam{
+    height: 16px;
+    line-height: 16px;
+    width: 100%;
+    float:left;
+    margin-top: 30px;
+    text-align: center;
+}
+.Infobtns{
+    width: 100%;
+    overflow:hidden;
+    float:left; 
+    margin-top: 41px;  
+}
+.publishInfo .Infobtns a{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    background:#eb6818;
+    color:white;
+    float:left;
+    margin-left: 120px;
+    text-align: center;
+    border-radius: 5px;
+}
+.publishInfo .Infobtns .cancelInfo{
+     margin-left: 19px;
+    background: #f5f5f5;
+    color:black;
+    border:1px solid #cdcdcd;
+}
+/***********选择平台*******************/
+.chosesteam{
+    width: 420px;
+    height: 247px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    background:white;
+    display:none;
+}
+.chosesteam .steamtitle{
+    width: 100%;
+    height: 44px;
+    font-size: 14px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.chosesteam .steamtitle span{
+    height: 100%;
+    line-height: 44px;
+    float:left;
+    margin-left: 16px;
+}
+.chosesteam .steamtitle img{
+    float:right;
+    margin-top: 15px;
+    margin-right: 20px;
+    cursor:pointer;
+}
+.chosesteam .steam{
+    width: 100%;
+    height: 138px;
+    overflow-y: scroll;
+    float:left;
+}
+.chosesteam .steam .steamname{
+    width: 100%;
+    height: 60px;
+    float:left;
+    border-bottom: 1px solid #cdcdcd;
+}
+.chosesteam .steam .steamname input{
+    float:left;
+    margin:24px 20px 0 20px;
+}
+.chosesteam .steam .steamname p{
+    height: 100%;
+    line-height: 60px;
+    float:left;
+}
+.steamBtns{
+    width: 100%;
+    overflow:hidden;
+    background:#f5f5f5;
+    float:left;
+}
+.steamBtns a{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background:#eb6818;
+    color:white;
+    float:left;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+.steamBtns .steamcancel{
+    margin-left: 80px;
+    background: #f5f5f5;
+    color:black;
+    border:1px solid #cdcdcd;
+}
+/*****撤销发布******************/
+.cancelPub{
+    width: 420px;
+    height: 247px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    background:white;
+    display:none;
+}
+.cancelPub .cancelhead{
+    width: 100%;
+    height: 44px;
+    font-size: 14px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.cancelPub .cancelhead span{
+    height: 100%;
+    line-height: 44px;
+    float:left;
+    margin-left: 16px;
+}
+.cancelPub .cancelhead img{
+    float:right;
+    margin-top: 15px;
+    margin-right: 20px;
+    cursor:pointer;
+}
+.cancelPub p{
+    height: 25px;
+    line-height: 25px;
+    width: 100%;
+    color:#eb6818;
+    float:left;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 61px;
+}
+.Canbtns{
+    width: 100%;
+    overflow:hidden;
+    float:left; 
+    margin-top: 57px;  
+}
+.cancelPub .Canbtns a{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    background:#eb6818;
+    color:white;
+    float:left;
+    margin-left: 120px;
+    text-align: center;
+    border-radius: 5px;
+}
+.cancelPub .Canbtns .cancelInfo{
+    margin-left: 19px;
+    background: #f5f5f5;
+    color:black;
+    border:1px solid #cdcdcd;
+}
+/****************楼房二维码下载********************/
+.qrcodenav{
+    width: 1686px;
+    height: 44px;
+    float:left;
+}
+.qrcodenav img{
+    float:left;
+    margin:11px 10px 0 20px;
+}
+.qrcodenav span{
+    height: 100%;
+    line-height: 44px;
+    float:left;
+}
+.qrcodecontent{
+    width: 1686px;
+    height: 325px;
+    background:white;
+    float:left;
+    margin-bottom: 563px;
+}
+.qrcodedown{
+    width: 180px;
+    height: 100%;
+    float:left;
+    margin-left: 20px;
+}
+.qrcodedown p{
+    width: 100%;
+    height: 17px;
+    line-height: 17px;
+    margin-top: 29px;
+    margin-bottom: 20px;
+}
+.qrcodedown img{
+    float:left;
+}
+.qrcodedown a{
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    float:left;
+    border-radius: 5px;
+    color:white;
+    text-align: center;
+    background:#eb6818;
+    margin-top: 19px;
+}
+/************租约到期******************/
+.deadlineT{
+    background:#eee;
+    width:1686px;
+    overflow:hidden;
+}
+.deadlineT a{
+    width: 180px;
+    height: 63px;
+    float:left;
+    text-align: center;
+    line-height: 63px;
+    cursor:pointer;
+}
+.deadlineT a span{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    float:right;
+    background:#d1dade;
+    margin:23px 18px 0 10px;
+}
+#selectH {
+    width: 150px;
+    height: 44px;
+    margin-top: 10px;
+    font-size: 16px;
+    float:right;
+    font-family: "微软雅黑";
+}
+#selectH option{
+    font-size: 16px;
+    height:40px;
+    font-family: "微软雅黑";
+}
+.deadlineC{
+    width: 100%;
+    height: 873px;
+    float:left;
+    background: white;
+}
+.rentInfobox{
+    width: 1606px;
+    height: 793px;
+    float:left;
+    margin:40px; 
+}
+.renterInfo{
+    width: 242px;
+    height: 376px;
+    float:left;
+    background:white;
+     border: 1px solid #cdcdcd;
+     margin-right: 20px;
+}
+.renterInfo .headInner{
+    width: 100%;
+    height: 63px;
+    float:left;
+    background:#f5f5f5;
+    border-bottom: 1px solid #cdcdcd;
+}
+.headInner img{
+    margin:10px;
+    float:left;
+}
+.headInner span{
+    height: 14px;
+    line-height: 14px;
+    float:left;
+}
+.headInner .zuke{
+    margin-top: 13px;
+    margin-bottom: 14px;
+    margin-right: 70px;
+}
+.headInner .xiugai{
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    background:#eb6818;
+    margin-top: 13px;
+    color:white;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+}
+.headInner .fangchang,.fanghao{
+    margin-left: 10px;
+}
+.bodyInner{
+    width: 100%;
+    height: 219px;
+    border-bottom: 1px solid #cdcdcd;
+    float:left;
+}
+.bodyInner p{
+    width: 100%;
+    height: 14px;
+    line-height: 14px;
+    padding-left: 10px;
+    margin:18px 0;
+    font-size: 14px;
+}
+.bodyInner .overline{
+    color:red;
+}
+.footBtns{
+    width: 100%;
+    height: 92px;
+    background:#f5f5f5;
+}
+.footBtns a{
+    width: 120px;
+    height: 45px;
+    line-height: 48px;
+    text-align: center;
+    background:#f5f5f5;
+    font-size: 14px;
+    float:left;
+}
+.footBtns .goon,.reback{
+    border-right: 1px solid #cdcdcd;
+}
+.footBtns .goon,.changeRoom{
+     border-bottom: 1px solid #cdcdcd;
+}
+/****************点击修改续费等overhide3******/
+.overhide3{
+    width: 100%;
+    height: 1080px;
+    background:rgba(0, 0, 0, 0.4);
+    position:absolute;
+    z-index: 19;
+    display:none;
+
+}
+.overhide3 .changeRenter{
+    width: 520px;
+    height: 710px;
+    margin:auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    position:absolute;
+    z-index: 20;
+    background:white;
+    display:none;
+}
+.overhide3 .changeRenter .Chead,.fanghaoxinxi,.zukeInfo{
+    width: 100%;
+    height: 44px;
+    float:left;
+    border-bottom: 1px solid #cdcdcd;
+
+}
+.overhide3 .changeRenter p{
+ height: 44px;
+ line-height: 44px;
+ padding-left: 10px;
+ float:left;
+}
+.changeRenter .Chead img{
+    float:right;
+    margin-top: 12px;
+    margin-right: 9px;
+    cursor:pointer;
+}
+.overhide3 .changeRenter .fanghaoxinxi2{
+    width: 100%;
+    height: 48px;
+    float:left;
+    border-bottom: 1px solid #cdcdcd;
+
+}
+.changeRenter .fanghaoxinxi2 span{
+    height: 100%;
+    line-height: 48px;
+    float:left;
+    margin-left: 68px;
+    margin-right: 20px;
+}
+.changeRenter .fanghaoxinxi2 input{
+    float:left; 
+    width: 84px;
+    height: 28px;
+    margin-top: 10px;
+    border:1px solid #cdcdcd;
+    outline:none;
+    padding: 0 20px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+.zukeInfo2{
+    width: 100%;
+    height: 149px;
+    float:left;
+    border-bottom: 1px solid #cdcdcd;
+
+}
+.zukeInfo2 .zukename,.zuketel,.rentpic {
+    height: 30px;
+    line-height: 30px;
+    float:left;
+    margin-left: 54px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.zuketel{
+    margin-left: 40px;
+}
+.rentpic{
+    margin-left: 68px;
+}
+.zukephoto{
+    width: 80px;
+    height: 80px;
+    float:left;
+    border:1px solid #cdcdcd;
+    position: relative;
+    background:url("../imgs/tp.png") no-repeat center;
+    margin-top: 20px;
+}
+.zukeInfo2 input{
+    float:left; 
+    width: 84px;
+    height: 28px;
+    margin-top: 10px;
+    border:1px solid #cdcdcd;
+    outline:none;
+    padding: 0 20px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+.zukephoto .uppic{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left:0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    border:none;
+    overflow:hidden;    
+}
+.zuyueInfo{
+    width: 100%;
+    height: 272px;
+    float:left;
+    border-bottom:1px solid #cdcdcd;
+}
+.zuyueInfo ul{
+    width: 450px;
+    height: 150px;
+    float:left;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+
+}
+.zuyueInfo ul li{
+    width: 100%;
+    height: 30px;
+    float:left;
+    margin-bottom: 10px;
+}
+.zuyueInfo ul li span{
+    height: 30px;
+    line-height: 30px;
+    float:left;
+    margin-right: 20px;
+}
+.zuyueInfo ul li input{
+    float:left;
+    width: 84px;
+    padding: 0 20px;
+    height: 28px;
+}
+.zuyueInfo ul li .daozu,.liver{
+    margin-left: 26px;
+}
+.holdM{
+    margin-left: 58px;
+}
+.zukebeizhu{
+    width: 100%;
+    float: left;
+    overflow:hidden;
+}
+.zukebeizhu span{
+    float:left;
+    height: 16px;
+    line-height: 16px;
+    margin-left: 72px;
+}
+.beizhu2{
+    width: 364px;
+    height: 80px;
+    margin-left: 20px;
+    resize:none;
+}
+.xiugaiInfo{
+    width: 100%;
+    overflow:hidden;
+    float:left;
+    background:#f5f5f5;
+    padding-bottom: 10px;
+}
+.xiugaiInfo a{
+    width: 120px;
+    height: 40px;
+    background:#eb6818;
+    color:white;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 200px;
+}
+/****************续租***********/
+.gononRent{
+    width: 320px;
+    height: 598px;
+    margin:auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    position:absolute;
+    z-index: 20;
+    background:white;
+    display:none;
+}
+.gononRent .goHead,.gocurrent ,.goRang,.goRangAfter{
+    width: 100%;
+    height: 44px;
+    float:left;
+    border-bottom: 1px solid #cdcdcd;
+}
+.gocurrent{
+    color:#f18f47;
+}
+.gononRent .goHead span,.gocurrent span,.goRang span,.goRangAfter span{
+    height: 100%;
+    line-height: 44px;
+    float:left;
+    margin-left: 20px;
+}
+.gononRent .goHead img{
+    float:right;
+    margin-top: 12px;
+    margin-right: 9px;
+}
+.gononRent .gocurrent2{
+    width: 100%;
+    height: 80px;
+    float:left;
+    border-bottom: 1px solid #cdcdcd;
+    font-size: 14px;
+}
+.gononRent .gocurrent2 span{
+    width:102px;
+    height:40px;
+    line-height: 40px;
+    float:left;
+}
+.rentM1{
+    margin-left: 20px;
+}
+.currentD1{
+    margin-left: 20px;
+}
+.goRang span{
+    color:#f18f47;
+}
+.goRangBefore{
+    width: 100%;
+    height: 170px;
+    float:left;
+    font-size: 14px;
+    border-bottom: 1px solid #cdcdcd;
+
+}
+.goRangBefore ul{
+    width: 100%;
+    height: 100%;
+}
+.goRangBefore ul li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.goRangBefore ul li span{
+    height: 100%;
+    line-height: 40px;
+    float:left;
+    margin-left: 20px;
+}
+.goRangBefore ul li input[type=radio]{
+    margin-left: 20px;
+}
+.goRangBefore ul li .rangval{
+    margin-left: 20px;
+    width: 114px;
+    height: 28px;
+    padding-left: 10px;
+}
+.goRangBefore ul li select{
+    width: 60px;
+    height: 28px;
+    margin-left: 10px;
+}
+.goRangAfter span{
+    color:#39aee8;
+}
+.goRangAfter2{
+    width: 100%;
+    height: 105px;
+    border-bottom: 1px solid #cdcdcd;
+    float:left;
+}
+.goRangAfter2 span{
+    width: 70px;
+    height: 35px;
+    line-height: 35px;
+    float:left;
+    margin-left: 20px;
+     margin-right: 28px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.goRangAfter2 input{
+    width: 114px;
+    height: 29px;
+    float:left;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.goFooter{
+    width: 100%;
+    height: 60px;
+    background:#f5f5f5;
+    float:left;
+}
+.goFooter a{
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    background:#eb6818;
+    line-height: 40px;
+    text-align: center;
+    color:white;
+    border-radius: 5px;
+    float:left;
+    margin-left: 20px;
+}
+.goFooter .goquxiao{
+    background:#f5f5f5;
+    color:#999;
+    margin-left: 39px;
+    border:1px solid #cdcdcd;
+}
+/**************换房*************/
+.exchange{
+    width: 320px;
+    height: 520px;
+    margin:auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    position:absolute;
+    z-index: 20;
+    background:white;
+    display:none;
+}
+.exchange .exhead{
+    width: 100%;
+    height: 44px;
+    float:left;
+    border-bottom: 1px solid #cdcdcd; 
+
+}
+.exhead span{
+    height: 100%;
+    float:left;
+    line-height: 44px;
+    margin-left: 20px;
+}
+.exhead img{
+    float:right;
+    margin-top: 12px;
+    margin-right: 9px;
+}
+.exchange .exbody{
+    width: 100%;
+    height: 415px;
+    float:left;
+}
+.exchange .exbody ul{
+    width: 100%;
+    height: 415px;
+    float:left;
+    overflow-y: scroll;
+}
+.exchange .exbody ul li{
+    width: 100%;
+    height: 44px;
+    float:left;
+    border-bottom: 1px solid #cdcdcd;
+    position: relative; 
+}
+.exbody ul li span{
+    height: 100%;
+    float:left;
+    line-height: 44px;
+    margin-left: 20px;
+}
+.exbody ul li img{
+    float:right;
+    margin-top: 12px;
+    margin-right: 9px;
+    cursor:pointer;
+}
+.exroomNum{
+    width: 100%;
+    overflow:hidden;
+    display:none;
+}
+.exroomNum .exlist{
+    width: 280px;
+    height: 40px;
+    border-radius: 5px;
+    border:1px solid #cdcdcd;
+   
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.exactive{
+     background:#f5f5f5;
+}
+.exroomNum .exactive span{
+    height: 100%;
+    float:left;
+    line-height: 40px;
+    margin-left: 20px;
+}
+.exroomNum .exlist a{
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    float:right;
+    margin:6px ;
+    border:1px solid #cdcdcd;
+    border-radius: 10px;
+    text-align: center;
+}
+.exroomNum .exlist input{
+    float:left;
+    margin:14px 8px 0 20px;
+}
+.exroomNum .exlist span{
+     height: 100%;
+    float:left;
+    line-height: 40px;
+}
+.exfooter{
+    width: 100%;
+    height: 60px;
+    float:left;
+    background:#f5f5f5;
+}
+.exfooter a{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    float:left;
+    text-align: center;
+    color:white;
+    margin-top: 10px;
+    margin-left: 20px;
+    background:#eb6818;
+    border-radius: 5px;
+}
+.exfooter .excancel{
+    border:1px solid #cdcdcd;
+    background:#f5f5f5;
+    margin-left: 39px;
+    color:#999;
+}
+/***********删除******************/
+.exdelete{
+    width: 420px;
+    height: 248px;
+     margin:auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    position:absolute;
+    z-index: 20;
+    background:white;
+    display:none;
+}
+.exdelete2{
+    width: 420px;
+    height: 248px;
+     margin:auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    position:absolute;
+    z-index: 20;
+    background:white;
+    display:none;
+}
+.deleteHead,.deleteHead2{
+    width: 100%;
+    height: 44px;
+    float:left;
+    border-bottom: 1px solid #cdcdcd;
+}
+.deleteHead span,.deleteHead2 span{
+    float:left;
+    height:44px;
+    line-height: 44px;
+    margin-left: 20px;
+}
+.deleteHead img,.deleteHead2 img{
+    float:right;
+    margin-top: 15px;
+    margin-right: 20px;
+    cursor:pointer;
+}
+.exdelete .warnpic{
+    margin-top: 59px;
+    margin-left: 36px;
+    margin-right: 25px;
+    float:left;
+}
+.exdelete p,.exdelete2 p{
+    float:left;
+    width: 270px;
+    height: 43px;
+    line-height:21px;
+    margin-top: 56px;
+    color:#eb6818;
+    font-size: 18px;
+}
+.exdelete2 p{
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+}
+.exbtns,.exbtns2{
+    width: 100%;
+    height: 60px;
+    float:left;
+    margin-top: 50px;
+}
+.exbtns a,.exbtns2 a{
+    width: 120px;
+    height: 40px;
+    float:left;
+    background:#eb6818;
+    color:white;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 80px;
+}
+.exbtns .excancel,.exbtns2 .excancel2{
+    border:1px solid #cdcdcd;
+    background:#f5f5f5;
+    margin-left: 20px;
+    color:#999;
+}
+.exbtns2 .excancel2{
+    margin-left: 80px;
+}
+.exbtns2 .exsure2{
+    margin-left: 10px;
+}
+/***********评价judgy.html*********/
+.judgyhead{
+    width:1686px;
+    height: 104px;
+    background:white;
+    border-bottom: 1px solid #cdcdcd;
+}
+.judgyhead img{
+    float:left;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.judgyhead .roomDetail{
+    width: 200px;
+    height: 45px;
+    float:left;
+    margin-top: 30px;
+}
+.judgyhead .roomDetail .ju_nick{
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+}
+.judgyhead .roomDetail span{
+    height: 100%;
+    line-height: 14px;
+    font-size: 14px;
+    float:left;
+    margin-top: 10px;
+}
+.choicestar{
+    width: 100%;
+    height: 50px;
+    float:left;
+    margin-top: 30px;
+}
+.choicestar span{
+    height: 50px;
+    line-height: 50px;
+    float:left;
+    margin-left: 40px;
+    color:#eb6818;
+}
+#starJ{
+    width: 150px;
+    height: 30px;
+    float:left;
+    margin-left: 20px;
+}
+#starJ img{
+    margin-top: 15px;
+    display:inline-block;
+}
+.roomsrepair .judgename{
+    width: 100%;
+    height: 14px;
+    line-height: 14px;
+    float:left;
+    font-size: 14px;
+    margin-left: 40px;
+    padding-left: 0;
+    margin-bottom: 9px;
+}
+.roomsrepair .judgeC{
+    width: 460px;
+    height: 260px;
+    resize:none;
+    float:left;
+    margin-left: 40px;
+}
+.jdbtns{
+   width: 100%;
+   height: 44px;
+   float:left; 
+}
+.jdbtns a{
+    width: 100px;
+    height: 44px;
+    line-height: 44px;
+    float:left;
+    text-align: center;
+    color:white;
+    border-radius: 5px;
+    background:#eb6818;
+    margin-left: 40px;
+    margin-top: 20px;
+
+}
+.jdbtns .jdback{
+    border:1px solid #cdcdcd;
+    background:#f5f5f5;
+    margin-left: 20px;
+    color:#999;
+}
+/************************租客信息**********/
+.rentform{
+    width: 1686px;
+    height:873px;
+    overflow-y: scroll;
+    background:white;
+}
+.renterbtns{
+    width: 100%;
+    height: 84px;
+    float:left;
+}
+.renterbtns img{
+    float:left;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.renterbtns .to-date,.renterbtns .Add-tenant,.renterbtns .print_default{
+    margin-left:20px;
+}
+.renterbtns form{
+    width: 660px;
+    height: 44px;
+    border:1px solid #e5e5e5;
+    border-radius: 5px;
+    float:right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.renterbtns form .searching{
+    width: 577px;
+    height: 42px;
+    outline: none;
+    border:none;
+    padding-left: 19px;
+    padding-bottom: 1px;
+    font-size: 14px;
+    color:#999;
+    font-family: "微软雅黑";
+    float:left;
+}
+.renterbtns form .sousou{
+    width: 64px;
+    height: 44px;
+    float:right;
+    background:#eb6818;
+    position: relative;
+    cursor:pointer;
+    color:white;
+    font-size: 14px;
+    /*line-height: 14px;*/
+    text-align: center;
+    position:relative;
+}
+.renterbtns .sousou input{
+    width: 100%;
+    height: 44px;
+    outline: none;
+    border:none;
+    color:white;
+    font-size: 14px;
+    text-align: center;
+    background:#eb6818;
+
+}
+.renterbtns .sousou img{
+    position:absolute;
+    top:13px;
+    left:6px;
+    margin-top: 0;
+}
+.renterhead{
+    width: 1646px;
+    height: 44px;
+    line-height: 44px;
+    background:#f5f5f5;
+    border-bottom: 1px solid #cdcdcd;
+    margin-left: 20px;
+    float:left;
+}
+.passedlt{
+    width: 100%;
+    overflow:hidden;
+    float:left;
+}
+.hadpassed,.hadpassedlist{
+    width: 1646px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #cdcdcd;
+    margin-left: 20px;
+    float:left;
+    border-top:none;
+}
+.hadpassedlist{
+    display:none;
+}
+.renterhead input{
+    margin-left: 20px;
+    float:left;
+    margin-top: 15px;
+}
+.hadpassed input,.hadpassedlist input{
+    margin-left: 20px;
+    float:left;
+    margin-top: 25px;
+}
+.renterhead span,.hadpassed span,.hadpassedlist span{
+    width: 190px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 44px;
+    float:left;
+    margin-left: 10px;
+}
+.hadpassed img{
+    margin-left: 1px;
+    float:left;
+    margin-top: 20px;
+}
+.hadpassed span,.hadpassedlist span{
+    width: 190px;
+    height: 60px;
+    font-size: 14px;
+    line-height: 60px;
+    float:left;
+    margin-left: 10px;
+}
+.renterhead span:nth-child(2){
+    margin-left: 30px;
+}
+.hadpassedlist span:nth-child(2){
+    margin-left: 30px;
+}
+.listbtns{
+    height: 100%;
+    width: 270px;
+    float:right;
+    margin-right: 20px;
+}
+.listbtns a{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    float:left;
+    text-align: center;
+    color:white;
+    border-radius: 5px;
+    background:#eb6818;
+    margin-right: 10px;
+    margin-top: 10px;
+}
