@@ -6,7 +6,7 @@
         这是组件1
             <router-link :to="{path:'head',query:{id:this.ceshi}}">
                 <button>
-                    点我跳转
+                    点我跳转到测试
                 </button>
             </router-link>
              <router-link :to="{path:'menu',query:{id:this.ceshi}}">
@@ -17,6 +17,9 @@
              <div class="slide1">
         <router-view></router-view>
             </div>
+
+
+
     </div>
 </template>
 <script>
