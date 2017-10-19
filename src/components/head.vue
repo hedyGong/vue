@@ -25,5 +25,5 @@
 
 </script>
 <style scoped lang="less">
-    @import 'home.less';
+
 </style>
