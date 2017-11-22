@@ -26,41 +26,6 @@ const store = new vuex.Store({ //这个就是vuex，也是属于全局使用的�
         increment(state) {},
     }
 })
-// const store = new vueX.Store({
-//     state: {
-//         token: "",
-//         // domain:"http://wxopen.easydh.cn",
-//         domain: "http://yinziqiang.imwork.net",
-//         user_id: "",
-//         nick_name: "",
-//         fun: "",
-//         // dizhi:"http://wxopen.easydh.cn/OpenPlatform/SSO_Login",
-//         dizhi: "http://yinziqiang.imwork.net/OpenPlatform/SSO_Login",
-//         callback: function(res) {
-//             var a = document.cookie
-
-//             function GetQueryString(name, str) {
-//                 var QueryStr = str;
-//                 var reg = new RegExp(name + '[=]{1,1}([a-zA-Z0-9_-]+)');
-//                 if (reg.test(QueryStr)) {
-//                     return reg.exec(QueryStr)[1];
-//                 };
-//                 return null;
-//             }
-//             var c = GetQueryString("token", a)
-//             this.token = c
-//             if (!this.token || res.body.code == "10002" || !res.body.code) {
-//                 location.href = this.dizhi
-//             }
-//         }
-//     },
-//     mutations: {
-//         increment(state) {
-//             sessionStorage.setItem('token', token);
-//             store.commit('increment')
-//         },
-//     }
-// })
 new Vue({
     router,
     render: h => h(App),

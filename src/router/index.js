@@ -4,13 +4,15 @@ import home from '../components/home.vue';
 //首先先引入你的组件到这里
 import head from '../components/head.vue'; //路径要对
 import menu from '../components/menu.vue';
+import layouts from '../components/layouts.vue';
+import menus from '../components/menus.vue';
 Vue.use(Router);
 // 这个是路由
 export default new Router({
     routes: [
         {
             path: '/',
-            redirect: '/home' //redirect这个的意思就是当你打开页面的时候默认显示这个组件，假设你把这个改成head，就会默认显示这个组件，试试
+            redirect: '/layouts' //redirect这个的意思就是当你打开页面的时候默认显示这个组件，假设你把这个改成head，就会默认显示这个组件，试试
         }, 
         {
             path: '/home',
@@ -30,6 +32,16 @@ export default new Router({
             },
              ]
         }, 
+        // 布局组件
+        {
+            path: '/layouts',
+            component: layouts
+        },
+        // 菜单组件
+        {
+            path: '/menus',
+            component: menus
+        }
 
     ]
 })
